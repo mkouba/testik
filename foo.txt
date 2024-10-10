@@ -1,5 +1,7 @@
 Vytvoril jsem novy soubor foo.txt!
 
 Nebo spis nejaky vic smysluplny text.
-
+Něco jsem tam přidal!
+Hello world
+čau světe
 ChatGPT or Gemini?
