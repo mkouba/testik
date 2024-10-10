@@ -1,1 +1,3 @@
 Vytvoril jsem novy soubor foo.txt!
+
+Ted pridam nejaky text...
