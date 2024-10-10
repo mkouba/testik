@@ -5,3 +5,4 @@ Něco jsem tam přidal!
 Hello world
 čau světe
 ChatGPT or Gemini?
+Zeditoval jsem foo.txt!
