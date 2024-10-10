@@ -4,3 +4,4 @@ Nebo spis nejaky vic smysluplny text.
 Něco jsem tam přidal!
 Hello world
 čau světe
+ChatGPT or Gemini?
