@@ -2,3 +2,4 @@ Vytvoril jsem novy soubor foo.txt!
 
 Nebo spis nejaky vic smysluplny text.
 Hello world
+čau světe
