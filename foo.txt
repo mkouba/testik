@@ -1,3 +1,5 @@
 Vytvoril jsem novy soubor foo.txt!
 
 Nebo spis nejaky vic smysluplny text.
+
+Zeditoval jsem foo.txt!
