@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Hello world v2</title>
+    <title>Hello world v3</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -34,13 +34,28 @@
         h2 {
             margin-top: 1em;
         }
+
+        div {
+            margin-top: 1em;
+        }
     </style>
+    <script>
+        function changeColor() {
+            const obrazek = document.getElementById("obr-1");
+            const barva = obrazek.style["background-color"];
+            if (barva == "blue") {
+                obrazek.style["background-color"] = "black"; 
+            } else {
+                obrazek.style["background-color"] = "blue";
+            }
+        }
+    </script>
 </head>
 
 <body>
     <div class="container">
 
-        <h1>Hello world v2</h1>
+        <h1>Hello world v3</h1>
         <p>
             Ahoj světe!
         </p>
@@ -48,15 +63,17 @@
         <h2>Seznam odkazů</h2>
         <ul>
             <li><a href="https://www.gymsusice.cz/">www.gymsusice.cz</a></li>
-            <li><a href="index_v1.html">index_v1</a></li>
-            <li><a href="index_v3.html">index_v3</a></li>
+            <li><a href="index_v2.html">index_v2</a></li>
             <li><a href="#text3">Text 3</a></li>
         </ul>
 
         <h2>Obrázek</h2>
-        <div class="obrazek">
+        <div class="obrazek" id="obr-1">
             <img src="https://www.gymsusice.cz/themes/gymnaziumsusice/assets/images/logo_gymnazium.png" width="100px"
                 height="100px" alt="Logo gympl" />
+        </div>
+        <div>
+            <button class="btn btn-primary" onclick="changeColor();">Změnit pozadí</button>
         </div>
 
         <h2>Obrázek jako odkaz</h2>
