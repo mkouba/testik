@@ -62,7 +62,14 @@
                     gameover = true;
                     log.innerHTML += '<p>Konec hry. Prohrál jsi.</p>';
                 } else {
-                    log.innerHTML += '<p>Špatně. Zkus to znovu...</p>';
+                    let entry = '<p>' + inputValue + ' je špatně.';
+                    if (inputValue > secret) {
+                        entry += 'Tvoje číslo je větší.';
+                    } else {
+                        entry += 'Tvoje číslo je menší.';
+                    }
+                    entry += ' Zkus to znovu...</p>';
+                    log.innerHTML += entry;
                     document.getElementById("remaining").innerHTML = 'Zbývá ti ' +  attempts + ' pokusů.';
                     console.log("Remaining attempts: " + attempts);
                 }
