@@ -33,6 +33,8 @@
                 .then((response) => response.json())
                 .then((data) => {
                     const myData = document.getElementById("my-data");
+                    const myDataSize = document.getElementById("my-data-size");
+                    myDataSize.innerHTML = "Nasel jsem " + data.length + " zaznamu...";
                     let count = 1;
                     data.forEach(ext => {
                         let extRow = myData.insertRow();
@@ -40,6 +42,7 @@
                         extRow.insertCell().textContent = ext.id;
                         extRow.insertCell().textContent = ext.name;
                         extRow.insertCell().textContent = ext.description;
+                        extRow.insertCell().textContent = ext.category;
                     });
                 });
         }
@@ -61,6 +64,8 @@
             <button type="button" class="btn btn-primary" onclick="fetchData();">Nahraj data</button>
         </div>
 
+        <p id="my-data-size"></p>
+
         <table id="my-data" class="table table-striped table-bordered">
             <caption>List of Quarkus extensions</caption>
             <thead>
@@ -68,6 +73,7 @@
                 <th>Id</th>
                 <th>Name</th>
                 <th>Description</th>
+                <th>Category</th>
             </thead>
         </table>
 
