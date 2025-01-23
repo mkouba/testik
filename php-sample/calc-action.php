@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>PHP Hello World</title>
+        <title>PHP Uppercase Result</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -11,33 +11,34 @@
         body {
             margin: 5em;
         }
-        h2 {
+        h1 {
             margin-top: 1em;
+            margin-bottom: 1em;
+            text-decoration: underline dotted;
+        }
+        p.vysledek {
+            font-size: 2em;
         }
     </style>
     </head>
     <body>
         <div class="container">
         
-        <h1>PHP Hello World</h1>
+        <h1>Výsledek</h1>
 
-        <p><a href="https://www.php.net/docs.php" target="_blank">PHP dokumentace</a></p>
-        
-        <?php echo '<p>Ahoj svete! Dneska je ctvrtek.</p>'; ?>
-
-        <div class="card">
-            <div class="card-body">
-                <code>
-                docker run -d -p 8080:80 --name hello-php-app -v "$PWD"/php-sample:/var/www/html php:8.2-apache
-                </code>
-            </div>
-        </div>
-
-        <hr>
-
-        <?php
-            echo $_SERVER['REQUEST_METHOD'];
+        <p class="vysledek">
+        <?php 
+            $operand1 = $_POST['operand1'];
+            $operand2 = $_POST['operand2'];
+            $operator = $_POST['operator'];;
+            
+            if ($operator == "plus") {
+                echo $operand1 + $operand2;
+            } else if($operator == "minus") {
+                echo $operand1 - $operand2;
+            }
         ?>
+        </p>
 
         </div>
 
