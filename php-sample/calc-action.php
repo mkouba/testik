@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>PHP Uppercase Result</title>
+        <title>Calculator Result</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -30,7 +30,7 @@
         <?php 
             $operand1 = $_POST['operand1'];
             $operand2 = $_POST['operand2'];
-            $operator = $_POST['operator'];;
+            $operator = $_POST['operator'];
             
             if ($operator == "plus") {
                 echo $operand1 + $operand2;
