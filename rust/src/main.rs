@@ -18,7 +18,7 @@ fn subtract(val1: i32, val2: i32) -> i32 {
 }
 
 fn multiply(val1: i32, val2: i32) -> i32 {
-    val1 * val2
+    val1 * val1
 }
 
 fn divide(val1: i32, val2: i32) -> i32 {
